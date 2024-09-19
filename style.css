@@ -1,0 +1,112 @@
+:root {
+    --primary-blue-color: #6070FF;
+    --light-blue: #EBEBFF;
+    --light-black: #F7F7F9;
+    --navy-blue: #091E42;
+    --text-color: #344563;
+    --light-text-color: #6B778C;
+    --blue: #2230D2;
+    --mid-blue:#7F8CFF;
+}
+
+*,
+*::after
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;  
+}
+
+.btn {
+    padding: 12px ;
+    gap: 10px;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: center;
+
+    }
+
+.btn.light {
+box-shadow: 0px 8px 16px 0px #4053FC3D;
+background-color: var(--primary-blue-color);
+color: white;
+}
+
+.btn.dark {
+    background-color: #ffffff;
+    border: 1px solid var(--mid-blue);
+    color: var(--primary-blue-color);
+
+    
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    color: var(--primary-blue-color);
+    flex: 2;
+    align-self: center;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 20px;
+    text-align: left;
+    margin-left: 50px;
+    padding: 10px, 12px, 10px, 12px;
+}
+
+nav {
+    display:flex;
+    flex-direction: row;
+    padding: 25px 10px;
+    width: 100%;
+    position: fixed;
+    top: -2px;
+    z-index: 100;
+    background-color: #ffffff;
+}
+
+nav::-webkit-scrollbar {
+    box-shadow: 0px 0px 16px 0px #4053FC3D;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+nav > ul > li > a {
+    color: var(--text-color);
+}
+
+.hero-section  {
+    background: url(/images/Header\ bg@2x.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 846px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.hero-text {
+    background: #091E42;
+    height: 50vh;
+    width: 60%;
+}
